@@ -1,9 +1,81 @@
-#include <iostream>
+﻿#include <iostream>
 #include <studio.h>
 #include "..\DATA_LAYER\Data.h"
 #include "..\DATA_LAYER\Data.cpp"
 
 using namespace std;
+
+void VisualizationMerge()
+{
+    cout << "        *○*     *○*       " << endl;
+    cout << "     *○○○○○○*○*○○○○○○*    " << endl;
+    cout << "   *○○○○○○○*○○○*○○○○○○○*  " << endl;
+    cout << "  *○○○○○○○*○○○○○*○○○○○○○* " << endl;
+    cout << "  *○○○○○○○*○○○○○*○○○○○○○* " << endl;
+    cout << "   *○○○○○○○*○○○*○○○○○○○*  " << endl;
+    cout << "     *○○○○○○*○*○○○○○○○*   " << endl;
+    cout << "        *○*     *○*       " << endl;
+}
+
+void VisualizationSection()
+{
+    cout << "        * *     * *       " << endl;
+    cout << "     *      *○*      *    " << endl;
+    cout << "   *       *○○○*       *  " << endl;
+    cout << "  *       *○○○○○*       * " << endl;
+    cout << "  *       *○○○○○*       * " << endl;
+    cout << "   *       *○○○*       *  " << endl;
+    cout << "     *      *○*      *    " << endl;
+    cout << "        * *     * *       " << endl;
+}
+
+void DifferenceA()
+{
+    cout << "        *○*     * *       " << endl;
+    cout << "     *○○○○○○* *      *    " << endl;
+    cout << "   *○○○○○○○*   *       *  " << endl;
+    cout << "  *○○○○○○○*     *       * " << endl;
+    cout << "  *○○○○○○○*     *       * " << endl;
+    cout << "   *○○○○○○○*   *       *  " << endl;
+    cout << "     *○○○○○○* *      *    " << endl;
+    cout << "        *○*     * *       " << endl;
+}
+
+void DifferenceB()
+{
+    cout << "        * *     *○*       " << endl;
+    cout << "     *      * *○○○○○○*    " << endl;
+    cout << "   *       *   *○○○○○○○*  " << endl;
+    cout << "  *       *     *○○○○○○○* " << endl;
+    cout << "  *       *     *○○○○○○○* " << endl;
+    cout << "   *       *   *○○○○○○○*  " << endl;
+    cout << "     *      * *○○○○○○*    " << endl;
+    cout << "        * *     *○*       " << endl;
+}
+
+void SymetricalDifference()
+{
+    cout << "        *○*     *○*       " << endl;
+    cout << "     *○○○○○○* *○○○○○○*    " << endl;
+    cout << "   *○○○○○○○*   *○○○○○○○*  " << endl;
+    cout << "  *○○○○○○○*     *○○○○○○○* " << endl;
+    cout << "  *○○○○○○○*     *○○○○○○○* " << endl;
+    cout << "   *○○○○○○○*   *○○○○○○○*  " << endl;
+    cout << "     *○○○○○○* *○○○○○○*    " << endl;
+    cout << "        *○*     *○*       " << endl;
+}
+
+void Subset()
+{
+    cout << "        * *            " << endl;
+    cout << "     *       *         " << endl;
+    cout << "   *           *       " << endl;
+    cout << "  *       **    *      " << endl;
+    cout << "  *      *  *   *      " << endl;
+    cout << "   *      **   *       " << endl;
+    cout << "     *       *        " << endl;
+    cout << "        * *            " << endl;
+}
 
 void Menu()
 {
@@ -17,9 +89,12 @@ void Menu()
     cout << "        |                                     |" << endl;
     cout << "        +-------------------------------------+" << endl;
 
+    cout << "_________________________________________________________" << endl;
     cout << endl;
 
     cout << "+-------------------------------------------------------+" << endl;
+    cout << "|               Please, choose an action                |" << endl;
+    cout << "|                                                       |" << endl;
     cout << "|                    1. Merge                           |" << endl;
     cout << "|                    2. Section                         |" << endl;
     cout << "|                    3. The difference (A\B)            |" << endl;
@@ -29,9 +104,6 @@ void Menu()
     cout << "|                    9. Exit                            |" << endl;
     cout << "+-------------------------------------------------------+" << endl;
 
-    cout << endl;
-
-    cout << "Choose an option" ;
 	cin >> choice;
 
     cout << "_________________________________________________________" << endl;
@@ -39,31 +111,43 @@ void Menu()
     switch (choice) 
     {
     case 1:
-        outputMerge();
+        void outputMerge();
         break;
 
     case 2:
-        outputSecton();
+        void outputSecton();
         break;
 
     case 3:
         //
+        DifferenceA();
         break;
 
     case 4:
         //
+        DifferenceB();
         break;
 
     case 5:
         //
+        SymetricalDifference();
         break;
+
+    case 6:
+        //
+        Subset()
+        break;
+
+    case 7:
+        //
+        Subset()
+            break;
 
     case 6:
         //
         break;
 
     case 9:
-        break;
-    
+        break; 
     }
 }
