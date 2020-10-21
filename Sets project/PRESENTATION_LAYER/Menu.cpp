@@ -7,15 +7,19 @@ using namespace std;
 
 void Menu()
 {
-
 	int choice;
 
-    cout << "_________________________________________________________" << endl;
+    cout << endl;
+
+    cout << "        +-------------------------------------+" << endl;
+    cout << "        |                                     |" << endl;
+    cout << "        |             Sets Project            |" << endl;
+    cout << "        |                                     |" << endl;
+    cout << "        +-------------------------------------+" << endl;
+
     cout << endl;
 
     cout << "+-------------------------------------------------------+" << endl;
-    cout << "|               Please, choose an action                |" << endl;
-    cout << "|                                                       |" << endl;
     cout << "|                    1. Merge                           |" << endl;
     cout << "|                    2. Section                         |" << endl;
     cout << "|                    3. The difference (A\B)            |" << endl;
@@ -25,18 +29,20 @@ void Menu()
     cout << "|                    9. Exit                            |" << endl;
     cout << "+-------------------------------------------------------+" << endl;
 
+    cout << endl;
+
+    cout << "Choose an option" ;
 	cin >> choice;
 
-    switch (choice) {
+    cout << "_________________________________________________________" << endl;
+
+    switch (choice) 
+    {
     case 1:
-        void input(arr[], N);
-        int merge(arr1, m, arr2, n, *mergedArray);
         void outputMerge();
         break;
 
     case 2:
-        void input(arr[], N);
-        int section(arr1, m, arr2[], n, *sectArray);
         void outputSecton();
         break;
 
