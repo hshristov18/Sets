@@ -39,11 +39,11 @@ void Menu()
     switch (choice) 
     {
     case 1:
-        void outputMerge();
+        outputMerge();
         break;
 
     case 2:
-        void outputSecton();
+        outputSecton();
         break;
 
     case 3:
