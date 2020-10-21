@@ -1,5 +1,7 @@
 ﻿#include <iostream>
 #include <studio.h>
+#include "..\DATA_LAYER\Data.h"
+#include "..\DATA_LAYER\Data.cpp"
 
 using namespace std;
 
@@ -77,39 +79,43 @@ void Subset()
 
 void Menu()
 {
-
 	int choice;
 
-
-    cout << "+-------------------------------------------------------------+" << endl;
-    cout << "|                                                             |" << endl;
-    cout << "|                            Sets                             |" << endl; 
-    cout << "|                  Please, choose an action                   |" << endl;
-    cout << "|                                                             |" << endl;
-    cout << "|                       1. Merge (A∪B)                       |" << endl;
-    cout << "|                       2. Section (A∩B)                      |" << endl;
-    cout << "|                       3. Difference (A\B)                   |" << endl;
-    cout << "|                       4. Difference (B\A)                   |" << endl;
-    cout << "|                       5. Symetrical difference (A△B)       |" << endl;
-    cout << "|                       6. Subset (AcB)                       |" << endl;
-    cout << "|                       7. Subset (BcA)                       |" << endl;
-    cout << "|                       9. Exit                               |" << endl;
-    cout << "|                                                             |" << endl;
-    cout << "+-------------------------------------------------------------+" << endl;
     cout << endl;
 
-    cout << "Your choice is:";
+    cout << "        +-------------------------------------+" << endl;
+    cout << "        |                                     |" << endl;
+    cout << "        |             Sets Project            |" << endl;
+    cout << "        |                                     |" << endl;
+    cout << "        +-------------------------------------+" << endl;
+
+    cout << "_________________________________________________________" << endl;
+    cout << endl;
+
+    cout << "+-------------------------------------------------------+" << endl;
+    cout << "|               Please, choose an action                |" << endl;
+    cout << "|                                                       |" << endl;
+    cout << "|                    1. Merge                           |" << endl;
+    cout << "|                    2. Section                         |" << endl;
+    cout << "|                    3. The difference (A\B)            |" << endl;
+    cout << "|                    4. The difference (B\A)            |" << endl;
+    cout << "|                    5. Symetrical difference           |" << endl;
+    cout << "|                    6. Subset                          |" << endl;
+    cout << "|                    9. Exit                            |" << endl;
+    cout << "+-------------------------------------------------------+" << endl;
+
 	cin >> choice;
 
-    switch (choice) {
+    cout << "_________________________________________________________" << endl;
+
+    switch (choice) 
+    {
     case 1:
-        outputMerge();
-        VisualizationMerge();
+        // 
         break;
 
     case 2:
-        outputSection();
-        VisualizationSection();
+        // 
         break;
 
     case 3:
@@ -136,6 +142,10 @@ void Menu()
         //
         Subset()
             break;
+
+    case 6:
+        //
+        break;
 
     case 9:
         break; 
