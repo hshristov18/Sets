@@ -138,15 +138,6 @@ void Menu()
         Subset()
         break;
 
-    case 7:
-        //
-        Subset()
-            break;
-
-    case 6:
-        //
-        break;
-
     case 9:
         break; 
     }
