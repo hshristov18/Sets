@@ -91,9 +91,7 @@ void Menu()
 {
     int choice;
 
-    do {
-
-        cout << endl;
+    cout << endl;
 
         cout << "        +-------------------------------------+" << endl;
         cout << "        |                                     |" << endl;
@@ -153,9 +151,7 @@ void Menu()
             Subset();
             break;
 
-        case 9:
-            break;
-        }
-
-    } while (choice != 9);
+    case 9:
+        break;
+    }
 }
