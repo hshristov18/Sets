@@ -62,7 +62,6 @@ void outputMerge() {
 	}
 }
 
-
 int section(int arr1[], int m, int arr2[], int n, int* sectArray)
 {
 	int index = 0;
@@ -103,3 +102,4 @@ void outputSecton() {
 		cout << sectArray[i] << " ";
 	}
 }
+
