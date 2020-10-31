@@ -5,7 +5,7 @@ using namespace std;
 
 void VisualizationMerge()
 {
-    cout << endl;
+    cout << endl <<endl;
     cout << "        *○*     *○*       " << endl;
     cout << "     *○○○○○○*○*○○○○○○*    " << endl;
     cout << "   *○○○○○○○*○○○*○○○○○○○*  " << endl;
@@ -19,7 +19,7 @@ void VisualizationMerge()
 
 void VisualizationSection()
 {
-    cout << endl;
+    cout << endl << endl;
     cout << "        * *     * *       " << endl;
     cout << "     *      *○*      *    " << endl;
     cout << "   *       *○○○*       *  " << endl;
@@ -31,9 +31,9 @@ void VisualizationSection()
     cout << endl;
 }
 
-void DifferenceA()
+void VisualizationDifferenceA()
 {
-    cout << endl;
+    cout << endl << endl;
     cout << "        *○*     * *       " << endl;
     cout << "     *○○○○○○* *      *    " << endl;
     cout << "   *○○○○○○○*   *       *  " << endl;
@@ -45,9 +45,9 @@ void DifferenceA()
     cout << endl;
 }
 
-void DifferenceB()
+void VisualizationDifferenceB()
 {
-    cout << endl;
+    cout << endl << endl;
     cout << "        * *     *○*       " << endl;
     cout << "     *      * *○○○○○○*    " << endl;
     cout << "   *       *   *○○○○○○○*  " << endl;
@@ -59,9 +59,9 @@ void DifferenceB()
     cout << endl;
 }
 
-void SymetricalDifference()
+void VisualizationSymetricalDiff()
 {
-    cout << endl;
+    cout << endl << endl;
     cout << "        *○*     *○*       " << endl;
     cout << "     *○○○○○○* *○○○○○○*    " << endl;
     cout << "   *○○○○○○○*   *○○○○○○○*  " << endl;
@@ -73,9 +73,9 @@ void SymetricalDifference()
     cout << endl;
 }
 
-void Subset()
+void VisualizationSubset()
 {
-    cout << endl;
+    cout << endl << endl;
     cout << "        * *            " << endl;
     cout << "     *       *         " << endl;
     cout << "   *           *       " << endl;
@@ -93,6 +93,7 @@ void Menu()
 
     do {
 
+        cout << "_________________________________________________________" << endl;
         cout << endl;
 
         cout << "        +-------------------------------------+" << endl;
@@ -135,22 +136,22 @@ void Menu()
 
         case 3:
             //
-            DifferenceA();
+            VisualizationDifferenceA();
             break;
 
         case 4:
             //
-            DifferenceB();
+            VisualizationDifferenceB();
             break;
 
         case 5:
             //
-            SymetricalDifference();
+            VisualizationSymetricalDiff();
             break;
 
         case 6:
-            //
-            Subset();
+            outputSubnet();
+            VisualizationSubset();
             break;
 
         case 9:

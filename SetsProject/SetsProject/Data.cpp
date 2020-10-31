@@ -103,3 +103,44 @@ void outputSecton() {
 	}
 }
 
+void subnet(int arr1[], int m, int arr2[], int n)
+{
+	for (int i = 0; i < m; i++)
+	{
+		for (int j = 0; j < n; j++)
+		{
+			if (arr1[i] == arr2[j])
+			{
+				cout << endl;
+				cout << "All elements in set 1 are contained in the second set!" << endl;
+				break;
+			}
+			else {
+				cout << endl;
+				cout << "Not all elements in set 1 are contained in the second!" << endl;
+			}
+			break;
+		}
+		break;
+	}
+}
+
+void outputSubnet() {
+
+	int m, n;
+	cout << "Input the size of the first set: ";
+	cin >> m;
+	cout << "Input the size of the second set: ";
+	cin >> n;
+
+	int* arr1 = new int[m];
+	int* arr2 = new int[n];
+
+	cout << "Input the numbers of the first set: ";
+	input(arr1, m);
+	cout << "Input the numbers of the second set: ";
+	input(arr2, n);
+
+	subnet(arr1, m, arr2, n);
+
+}
