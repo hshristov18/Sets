@@ -6,14 +6,14 @@ using namespace std;
 void VisualizationMerge()
 {
     cout << endl <<endl;
-    cout << "        *○*     *○*       " << endl;
-    cout << "     *○○○○○○*○*○○○○○○*    " << endl;
-    cout << "   *○○○○○○○*○○○*○○○○○○○*  " << endl;
-    cout << "  *○○○○○○○*○○○○○*○○○○○○○* " << endl;
-    cout << "  *○○○○○○○*○○○○○*○○○○○○○* " << endl;
-    cout << "   *○○○○○○○*○○○*○○○○○○○*  " << endl;
-    cout << "     *○○○○○○*○*○○○○○○○*   " << endl;
-    cout << "        *○*     *○*       " << endl;
+    cout << "        *.*     *.*       " << endl;
+    cout << "     *......*.*......*    " << endl;
+    cout << "   *.......*...*.......*  " << endl;
+    cout << "  *.......*.....*.......* " << endl;
+    cout << "  *.......*.....*.......* " << endl;
+    cout << "   *.......*...*.......*  " << endl;
+    cout << "     *......*.*.......*   " << endl;
+    cout << "        *.*     *.*       " << endl;
     cout << endl;
 }
 
@@ -21,12 +21,12 @@ void VisualizationSection()
 {
     cout << endl << endl;
     cout << "        * *     * *       " << endl;
-    cout << "     *      *○*      *    " << endl;
-    cout << "   *       *○○○*       *  " << endl;
-    cout << "  *       *○○○○○*       * " << endl;
-    cout << "  *       *○○○○○*       * " << endl;
-    cout << "   *       *○○○*       *  " << endl;
-    cout << "     *      *○*      *    " << endl;
+    cout << "     *      *.*      *    " << endl;
+    cout << "   *       *...*       *  " << endl;
+    cout << "  *       *.....*       * " << endl;
+    cout << "  *       *.....*       * " << endl;
+    cout << "   *       *...*       *  " << endl;
+    cout << "     *      *.*      *    " << endl;
     cout << "        * *     * *       " << endl;
     cout << endl;
 }
@@ -48,42 +48,42 @@ void VisualizationDifferenceA()
 void VisualizationDifferenceB()
 {
     cout << endl << endl;
-    cout << "        * *     *○*       " << endl;
-    cout << "     *      * *○○○○○○*    " << endl;
-    cout << "   *       *   *○○○○○○○*  " << endl;
-    cout << "  *       *     *○○○○○○○* " << endl;
-    cout << "  *       *     *○○○○○○○* " << endl;
-    cout << "   *       *   *○○○○○○○*  " << endl;
-    cout << "     *      * *○○○○○○*    " << endl;
-    cout << "        * *     *○*       " << endl;
+    cout << "        * *     *.*       " << endl;
+    cout << "     *      * *......*    " << endl;
+    cout << "   *       *   *.......*  " << endl;
+    cout << "  *       *     *.......* " << endl;
+    cout << "  *       *     *.......* " << endl;
+    cout << "   *       *   *.......*  " << endl;
+    cout << "     *      * *......*    " << endl;
+    cout << "        * *     *.*       " << endl;
     cout << endl;
 }
 
 void VisualizationSymetricalDiff()
 {
     cout << endl << endl;
-    cout << "        *○*     *○*       " << endl;
-    cout << "     *○○○○○○* *○○○○○○*    " << endl;
-    cout << "   *○○○○○○○*   *○○○○○○○*  " << endl;
-    cout << "  *○○○○○○○*     *○○○○○○○* " << endl;
-    cout << "  *○○○○○○○*     *○○○○○○○* " << endl;
-    cout << "   *○○○○○○○*   *○○○○○○○*  " << endl;
-    cout << "     *○○○○○○* *○○○○○○*    " << endl;
-    cout << "        *○*     *○*       " << endl;
+    cout << "        *.*     *.*       " << endl;
+    cout << "     *......* *......*    " << endl;
+    cout << "   *.......*   *.......*  " << endl;
+    cout << "  *.......*     *.......* " << endl;
+    cout << "  *.......*     *.......* " << endl;
+    cout << "   *.......*   *.......*  " << endl;
+    cout << "     *......* *......*    " << endl;
+    cout << "        *.*     *.*       " << endl;
     cout << endl;
 }
 
 void VisualizationSubset()
 {
     cout << endl << endl;
-    cout << "        * *            " << endl;
-    cout << "     *       *         " << endl;
-    cout << "   *           *       " << endl;
-    cout << "  *       **    *      " << endl;
-    cout << "  *      *  *   *      " << endl;
-    cout << "   *      **   *       " << endl;
-    cout << "     *       *         " << endl;
-    cout << "        * *            " << endl;
+    cout << "         * *            " << endl;
+    cout << "     *         *         " << endl;
+    cout << "   *             *       " << endl;
+    cout << "  *        **     *      " << endl;
+    cout << "  *       *  *    *      " << endl;
+    cout << "   *       **    *       " << endl;
+    cout << "     *         *         " << endl;
+    cout << "         * *            " << endl;
     cout << endl;
 }
 
@@ -102,7 +102,6 @@ void Menu()
         cout << "        |                                     |" << endl;
         cout << "        +-------------------------------------+" << endl;
 
-        cout << "_________________________________________________________" << endl;
         cout << endl;
 
         cout << "+-------------------------------------------------------+" << endl;
@@ -122,6 +121,18 @@ void Menu()
 
         cout << "_________________________________________________________" << endl;
 
+        while (choice != 1 && choice != 2 && choice != 3 && choice != 4 && choice != 5 && choice != 6 && choice != 9) {
+
+            cout << endl;
+            cout << "+-------------------------------------+" << endl;
+            cout << "|  Invalid option, please try again:  |" << endl;
+            cout << "+-------------------------------------+" << endl;
+            cout << "Choose an option: ";
+            cin >> choice;
+            cout << endl;
+            cout << "_________________________________________________________" << endl;
+        }
+
         switch (choice)
         {
         case 1:
@@ -135,17 +146,17 @@ void Menu()
             break;
 
         case 3:
-            //
+            outputDifferenceAB();
             VisualizationDifferenceA();
             break;
 
         case 4:
-            //
+            outputDifferenceBA();
             VisualizationDifferenceB();
             break;
 
         case 5:
-            //
+            outputSymDifference();
             VisualizationSymetricalDiff();
             break;
 
