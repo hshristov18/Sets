@@ -5,7 +5,7 @@ using namespace std;
 
 /*********************GRAPHiCS-PRESENTATION**********************/
 
-void VisualizationMerge()
+void VisualizationMerge() // function that have a diagram illustrating Merging
 {
     cout << endl << endl;
     cout << "        *.*     *.*       " << endl;
@@ -18,7 +18,7 @@ void VisualizationMerge()
     cout << "        *.*     *.*       " << endl;
     cout << endl;
 }
-void VisualizationSection()
+void VisualizationSection() // function that have a diagram illustrating Sectioning
 {
     cout << endl << endl;
     cout << "        * *     * *       " << endl;
@@ -31,7 +31,7 @@ void VisualizationSection()
     cout << "        * *     * *       " << endl;
     cout << endl;
 }
-void VisualizationDifferenceA()
+void VisualizationDifferenceA() // function that have a diagram illustrating the Difference A/B
 {
     cout << endl << endl;
     cout << "        *.*     * *       " << endl;
@@ -44,7 +44,7 @@ void VisualizationDifferenceA()
     cout << "        *.*     * *       " << endl;
     cout << endl;
 }
-void VisualizationDifferenceB()
+void VisualizationDifferenceB() // function that have a diagram illustrating the Difference B/A
 {
     cout << endl << endl;
     cout << "        * *     *.*       " << endl;
@@ -57,7 +57,7 @@ void VisualizationDifferenceB()
     cout << "        * *     *.*       " << endl;
     cout << endl;
 }
-void VisualizationSymetricalDiff()
+void VisualizationSymetricalDiff() // function that have a diagram illustrating the symmetrical difference
 {
     cout << endl << endl;
     cout << "        *.*     *.*       " << endl;
@@ -70,7 +70,7 @@ void VisualizationSymetricalDiff()
     cout << "        *.*     *.*       " << endl;
     cout << endl;
 }
-void VisualizationSubset()
+void VisualizationSubset() // function that have a diagram illustrating subsets
 {
     cout << endl << endl;
     cout << "         * *            " << endl;

@@ -3,7 +3,8 @@
 
 using namespace std;
 
-int main() {
-	system("color 03");
+int main() 
+{
+	system("color 03");// color change 
 	Menu();
 }

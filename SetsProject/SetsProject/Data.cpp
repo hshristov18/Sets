@@ -6,14 +6,14 @@ using namespace std;
 
 /*******************************SETS-DATA***********************************/
 
-void input(int arr[], int N)
+void input(int arr[], int N)//function for inputting the elements of the sets
 {
 	for (int i = 0; i < N; i++)
 	{
 		cin >> arr[i];
 	}
 }
-int merge(int arr1[], int m, int arr2[], int n, int* mergedArray)
+int merge(int arr1[], int m, int arr2[], int n, int* mergedArray)//function that finds the merges of 2 sets
 {
 	int temp, count = 0, index = 0;
 
@@ -37,7 +37,7 @@ int merge(int arr1[], int m, int arr2[], int n, int* mergedArray)
 	}
 	return index;
 }
-int section(int arr1[], int m, int arr2[], int n, int* sectArray)
+int section(int arr1[], int m, int arr2[], int n, int* sectArray)//function that finds the section of 2 sets
 {
 	int index = 0;
 	for (int i = 0; i < m; i++)
@@ -52,7 +52,8 @@ int section(int arr1[], int m, int arr2[], int n, int* sectArray)
 	}
 	return index;
 }
-vector<int> differenceAB(int arr1[], int m, int arr2[],int n, int* diffArray) {
+vector<int> differenceAB(int arr1[], int m, int arr2[],int n, int* diffArray)//function that finds the difference between A and B
+{
 
 	int index = 0;
 	vector<int> difference;
@@ -74,7 +75,9 @@ vector<int> differenceAB(int arr1[], int m, int arr2[],int n, int* diffArray) {
 	
 	return difference;
 }
-vector<int> differenceBA(int arr1[], int m, int arr2[], int n, int* diffArray) {
+vector<int> differenceBA(int arr1[], int m, int arr2[], int n, int* diffArray) //function that finds the difference between B and A
+{
+
 
 	int index = 0;
 	vector<int> difference;
@@ -96,7 +99,8 @@ vector<int> differenceBA(int arr1[], int m, int arr2[], int n, int* diffArray) {
 
 	return difference;
 }
-vector<int> symDifference(int arr1[], int m, int arr2[], int n, int* diffArray) {
+vector<int> symDifference(int arr1[], int m, int arr2[], int n, int* diffArray) //function that finds the symmetrical difference between A and B
+{
 
 	int index = 0;
 	vector<int> difference;
@@ -131,7 +135,8 @@ vector<int> symDifference(int arr1[], int m, int arr2[], int n, int* diffArray) 
 	}
 	return difference;
 }
-void subnet(int arr1[], int m, int arr2[], int n)
+void subnet(int arr1[], int m, int arr2[], int n) //function that finds the elements which are contained in both sets
+
 {
 	for (int i = 0; i < m; i++)
 	{

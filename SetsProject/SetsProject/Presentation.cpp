@@ -4,9 +4,10 @@
 
 using namespace std;
 
-void checkSize() {
+void checkSize(int m, int n) //function that checks if the number is <= 0
+{
 
-	int m{}, n{};
+	
 	while (m <= 0 || n <= 0) {
 
 		cout << endl;
@@ -19,7 +20,8 @@ void checkSize() {
 		cin >> n;
 	}
 }
-void outputMerge() {
+void outputMerge() //function that is for outputting the merging action 
+{
 
 	int m, n;
 	cout << "Input the size of the first set: ";
@@ -27,7 +29,7 @@ void outputMerge() {
 	cout << "Input the size of the second set: ";
 	cin >> n;
 
-	checkSize();
+	checkSize(m, n);
 
 	int* arr1 = new int[m];
 	int* arr2 = new int[n];
@@ -46,7 +48,8 @@ void outputMerge() {
 		cout << mergedArray[i] << " ";
 	}
 }
-void outputSecton() {
+void outputSecton() //function that is for outputting the sectioning action 
+{
 
 	int m, n;
 	cout << "Input the size of the first set: ";
@@ -54,17 +57,7 @@ void outputSecton() {
 	cout << "Input the size of the second set: ";
 	cin >> n;
 
-	while (m <= 0 || n <= 0) {
-
-		cout << endl;
-		cout << "+-------------------------------------+" << endl;
-		cout << "|  Invalid input, please try again:  |" << endl;
-		cout << "+-------------------------------------+" << endl;
-		cout << "Input the size of the first set: ";
-		cin >> m;
-		cout << "Input the size of the second set: ";
-		cin >> n;
-	}
+	checkSize(m, n);
 
 	int* arr1 = new int[m];
 	int* arr2 = new int[n];
@@ -83,7 +76,8 @@ void outputSecton() {
 		cout << sectArray[i] << " ";
 	}
 }
-void outputDifferenceAB() {
+void outputDifferenceAB() //function that is for outputting the difference A/B action 
+{
 
 	int m, n;
 	cout << "Input the size of the first sets: ";
@@ -91,7 +85,7 @@ void outputDifferenceAB() {
 	cout << "Input the size of the second sets: ";
 	cin >> n;
 
-	checkSize();
+	checkSize(m, n);
 
 	int* arr1 = new int[m];
 	int* arr2 = new int[n];
@@ -111,7 +105,8 @@ void outputDifferenceAB() {
 		cout << diffABCount[i] << " ";
 	}
 }
-void outputDifferenceBA() {
+void outputDifferenceBA()//function that is for outputting the difference B/A action 
+{
 
 	int m, n;
 	cout << "Input the size of the first sets: ";
@@ -119,7 +114,7 @@ void outputDifferenceBA() {
 	cout << "Input the size of the second sets: ";
 	cin >> n;
 
-	checkSize();
+	checkSize(m, n);
 
 	int* arr1 = new int[m];
 	int* arr2 = new int[n];
@@ -139,7 +134,8 @@ void outputDifferenceBA() {
 		cout << diffBACount[i] << " ";
 	}
 }
-void outputSymDifference() {
+void outputSymDifference() // function that is for outputting the symmetrical difference action
+{
 
 	int m, n;
 	cout << "Input the size of the first sets: ";
@@ -147,7 +143,7 @@ void outputSymDifference() {
 	cout << "Input the size of the second sets: ";
 	cin >> n;
 
-	checkSize();
+	checkSize(m, n);
 
 	int* arr1 = new int[m];
 	int* arr2 = new int[n];
@@ -168,7 +164,8 @@ void outputSymDifference() {
 		cout << symDiffCount[i] << " ";
 	}
 }
-void outputSubnet() {
+void outputSubnet() //function that is for outputting the subset action
+{
 
 	int m, n;
 	cout << "Input the size of the first set: ";
@@ -176,7 +173,7 @@ void outputSubnet() {
 	cout << "Input the size of the second set: ";
 	cin >> n;
 
-	checkSize();
+	checkSize(m, n);
 
 	int* arr1 = new int[m];
 	int* arr2 = new int[n];
@@ -189,7 +186,7 @@ void outputSubnet() {
 	subnet(arr1, m, arr2, n);
 
 }
-void Menu()
+void Menu() // function for the menu
 {
     int choice;
 
@@ -211,8 +208,8 @@ void Menu()
         cout << "|                                                       |" << endl;
         cout << "|                    1. Merge                           |" << endl;
         cout << "|                    2. Section                         |" << endl;
-        cout << "|                    3. The difference (A\B)             |" << endl;
-        cout << "|                    4. The difference (B\A)             |" << endl;
+        cout << "|                    3. The difference (A/B)            |" << endl;
+        cout << "|                    4. The difference (B/A)            |" << endl;
         cout << "|                    5. Symetrical difference           |" << endl;
         cout << "|                    6. Subset                          |" << endl;
         cout << "|                    9. Exit                            |" << endl;
@@ -223,11 +220,12 @@ void Menu()
 
         cout << "_________________________________________________________" << endl;
 
-        while (choice != 1 && choice != 2 && choice != 3 && choice != 4 && choice != 5 && choice != 6 && choice != 9) {
+        while (choice != 1 && choice != 2 && choice != 3 && choice != 4 && choice != 5 && choice != 6 && choice != 9) // loop for error message 
+		{
 
             cout << endl;
             cout << "+-------------------------------------+" << endl;
-            cout << "|  Invalid option, please try again:  |" << endl;
+            cout << "|  Invalid option, please try again:  |" << endl; // error message
             cout << "+-------------------------------------+" << endl;
             cout << "Choose an option: ";
             cin >> choice;
@@ -237,39 +235,39 @@ void Menu()
 
         switch (choice)
         {
-        case 1:
+        case 1: //this case is containing the functions connected with merging actions
             outputMerge();
             VisualizationMerge();
             break;
 
-        case 2:
+        case 2: //this case is containing the functions connected with sectioning actions
             outputSecton();
             VisualizationSection();
             break;
 
-        case 3:
+        case 3: //this case is containing the functions connected with difference actions between A and B
             outputDifferenceAB();
             VisualizationDifferenceA();
             break;
 
-        case 4:
+        case 4: //this case is containing the functions connected with difference actions between B and A
             outputDifferenceBA();
             VisualizationDifferenceB();
             break;
 
-        case 5:
+        case 5: //this case is containing the functions connected with the symmetrical difference actions between B and A
             outputSymDifference();
             VisualizationSymetricalDiff();
             break;
 
-        case 6:
+        case 6: //this case is containing the functions connected with subset actions
             outputSubnet();
             VisualizationSubset();
             break;
 
-        case 9:
+        case 9: //this case stops the code from functioning
             break;
         }
 
-    } while (choice != 9);
+    } while (choice != 9); // loop for repeating the menu
 }
