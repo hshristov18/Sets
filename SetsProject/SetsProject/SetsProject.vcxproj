@@ -141,11 +141,13 @@
   <ItemGroup>
     <ClCompile Include="SetsProject.cpp" />
     <ClCompile Include="Data.cpp" />
-    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Presentation.cpp" />
+    <ClCompile Include="Graphics.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Data.h" />
-    <ClInclude Include="Menu.h" />
+    <ClInclude Include="Graphics.h" />
+    <ClInclude Include="Presentation.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
